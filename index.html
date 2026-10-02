@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexander Hewitt — Data Scientist &amp; Operations Research Analyst</title>
+<meta name="description" content="Data scientist and operations research analyst. $7B+ federal revenue forecasting in Databricks, B-52 predictive-maintenance analytics, and two production web applications shipped end to end.">
+<meta property="og:title" content="Alexander Hewitt — Data Scientist &amp; Operations Research Analyst">
+<meta property="og:description" content="Federal forecasting at $7B+ scale, aircraft sustainment analytics, and two live production applications.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ahewitt.dev/">
+<link rel="canonical" href="https://ahewitt.dev/">
+<style>
+  :root{
+    --bg:#0b0d10; --panel:#12151a; --line:#22272f;
+    --fg:#e8eaed; --muted:#9aa3af; --accent:#5ea9ff; --accent-2:#7ee0a8;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--fg);
+    font-family:var(--sans);line-height:1.6;font-size:16px;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* ---------- header ---------- */
+  header{padding:56px 0 34px;border-bottom:1px solid var(--line)}
+  h1{font-size:1.95rem;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em}
+  .role{color:var(--muted);font-size:1.05rem;margin:0 0 20px}
+  .role strong{color:var(--fg);font-weight:600}
+  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+  .links a{
+    border:1px solid var(--line);background:var(--panel);
+    padding:7px 13px;border-radius:7px;font-size:.9rem;color:var(--fg);
+  }
+  .links a:hover{border-color:var(--accent);text-decoration:none}
+
+  /* ---------- sections ---------- */
+  section{padding:38px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.13em;
+     color:var(--muted);font-weight:600;margin:0 0 20px}
+  .lede{font-size:1.02rem;margin:0}
+  .lede + .lede{margin-top:14px}
+
+  /* ---------- metric strip ---------- */
+  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+  .metric{background:var(--panel);border:1px solid var(--line);
+          border-radius:9px;padding:15px 16px}
+  .metric .n{font-size:1.32rem;font-weight:650;letter-spacing:-.02em;display:block}
+  .metric .l{color:var(--muted);font-size:.79rem;line-height:1.4;display:block;margin-top:3px}
+
+  /* ---------- project cards ---------- */
+  .card{background:var(--panel);border:1px solid var(--line);
+        border-radius:11px;padding:22px;margin-bottom:16px}
+  .card:last-child{margin-bottom:0}
+  .card h3{margin:0 0 4px;font-size:1.13rem;letter-spacing:-.01em}
+  .card .kind{color:var(--accent-2);font-size:.76rem;text-transform:uppercase;
+              letter-spacing:.1em;font-weight:600}
+  .card p{margin:12px 0 0;color:#cfd4da;font-size:.95rem}
+  .stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
+  .stack span{font-family:var(--mono);font-size:.73rem;color:var(--muted);
+              border:1px solid var(--line);border-radius:5px;padding:3px 7px}
+  .card .go{display:inline-block;margin-top:15px;font-size:.9rem;font-weight:600}
+
+  /* ---------- honesty note ---------- */
+  .note{border-left:2px solid var(--accent);background:#101a26;
+        padding:14px 17px;border-radius:0 7px 7px 0;margin-top:16px;
+        font-size:.92rem;color:#c6cdd6}
+  .note strong{color:var(--fg)}
+
+  /* ---------- footer ---------- */
+  footer{padding:32px 0 54px;color:var(--muted);font-size:.88rem}
+  footer a{color:var(--fg)}
+
+  @media (max-width:640px){
+    header{padding:40px 0 28px}
+    h1{font-size:1.6rem}
+    .metrics{grid-template-columns:1fr}
+    section{padding:30px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Alexander Hewitt</h1>
+    <p class="role">
+      Data scientist &amp; operations research analyst —
+      <strong>federal forecasting, predictive maintenance, and ML delivery</strong>.
+      Remote-first, based in Edmond, Oklahoma.
+    </p>
+    <nav class="links">
+      <a href="resume.pdf">Résumé (PDF)</a>
+      <a href="https://github.com/HewittDS">GitHub</a>
+      <a href="https://www.linkedin.com/in/alexander-h-887785263/">LinkedIn</a>
+      <a href="mailto:AlexanderRhewitt@gmail.com">Email</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="wrap">
+      <h2>What I do</h2>
+      <p class="lede">
+        I build forecasting, simulation, and predictive models on large operational
+        datasets — and I ship the pipelines and dashboards that put them in front of
+        the people making decisions. Most of my work has been in environments where
+        the data is messy, the stakes are real, and the model has to be explainable
+        to a non-technical audience.
+      </p>
+      <p class="lede">
+        Ten-plus years across federal service (GS-14 Operations Research Analyst at
+        USCIS), Air Force depot maintenance analytics at Tinker AFB, banking, and
+        derivatives trading. MS in Data Science, 4.0 GPA. Lean Six Sigma Green Belt.
+      </p>
+
+      <div class="metrics">
+        <div class="metric">
+          <span class="n">$7B+</span>
+          <span class="l">Annual revenue and cost forecasting modeled</span>
+        </div>
+        <div class="metric">
+          <span class="n">24 days</span>
+          <span class="l">Recurring reporting work automated per year</span>
+        </div>
+        <div class="metric">
+          <span class="n">5.85M</span>
+          <span class="l">Flight records in my capstone ML pipeline</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Selected work</h2>
+
+      <div class="card">
+        <span class="kind">Live product</span>
+        <h3>Zollera — contractor quote analysis platform</h3>
+        <p>
+          A production web application that ingests contractor quotes as PDFs, photos,
+          or scans and extracts them into structured, comparable line items, so a
+          homeowner can see where a quote sits in the market. I designed and built it
+          end to end: 83 API routes and 61 pages on Next.js 15 with TypeScript and
+          PostgreSQL, including authentication, role-based admin tooling, rate
+          limiting, and audit logging.
+        </p>
+        <p>
+          The extraction core is a tiered, multi-provider LLM pipeline with automatic
+          failover — Gemini for native PDF handling, then vision models — running
+          under one shared time budget so a slow tier can't starve the fallback.
+          Around it sits PII detection and redaction before any model call, price
+          outlier and fraud-signal checks, duplicate-document detection, unit and
+          financial normalization, and an admin QC workflow for bulk uploads.
+        </p>
+        <div class="stack">
+          <span>Next.js 15</span><span>TypeScript</span><span>PostgreSQL</span>
+          <span>Prisma</span><span>NextAuth</span><span>Gemini</span>
+          <span>DeepInfra</span><span>Vercel</span>
+        </div>
+        <a class="go" href="https://zollera.com">Visit zollera.com →</a>
+      </div>
+
+      <div class="card">
+        <span class="kind">Live product</span>
+        <h3>HighThree — federal retirement analytics</h3>
+        <p>
+          A retirement analytics suite for federal employees under FERS: 43 reference
+          pages and 59 locality-pay pages. The core model projects salary and service
+          year by year, then discounts the resulting annuity stream to present value.
+          Companion tools cover break-even age, claiming timing, survivor and COLA
+          effects, TSP drawdown, and side-by-side scenario comparison.
+        </p>
+        <p>
+          Deliberately built with vanilla HTML, CSS, and JavaScript — no framework, no
+          build step, no server. Every calculation runs in the browser, so a user's
+          salary and service history never leave their device. Hardened with a strict
+          Content-Security Policy and built for search discovery with programmatic
+          locality-pay pages and generated social cards.
+        </p>
+        <div class="stack">
+          <span>JavaScript</span><span>HTML/CSS</span><span>Financial modeling</span>
+          <span>Present-value discounting</span><span>SEO</span><span>CSP</span>
+          <span>Vercel</span>
+        </div>
+        <a class="go" href="https://highthree.org">Visit highthree.org →</a>
+      </div>
+
+      <div class="card">
+        <span class="kind">Capstone — MS Data Science</span>
+        <h3>Flight departure delay prediction</h3>
+        <p>
+          An end-to-end regression pipeline over 5,854,077 U.S. domestic flights from
+          2024, joined to historical weather observations at the top 100 airports.
+          Six models evaluated — linear, regularized, random forest, XGBoost, and
+          LightGBM — with LightGBM deployed. 71 pre-departure features spanning
+          schedule, route history, and weather. Deployed as an interactive Streamlit
+          app with per-prediction feature attribution.
+        </p>
+        <p>
+          <strong>Reported honestly:</strong> test MAE 21.7 min, median absolute error
+          12.6 min, R² 0.077. An earlier iteration scored much higher only because it
+          leaked post-departure fields such as <code>carrier_delay</code> — values
+          recorded after a flight is already late. I found the leakage, removed it,
+          and re-evaluated on pre-departure signals only. Predicting delays before
+          departure is genuinely hard; the median error is the figure I'd stand
+          behind, and the notebook documenting the leak is in the repo history.
+        </p>
+        <div class="stack">
+          <span>Python</span><span>LightGBM</span><span>XGBoost</span>
+          <span>scikit-learn</span><span>pandas</span><span>Streamlit</span>
+          <span>Plotly</span>
+        </div>
+        <a class="go" href="https://dtsc691flightprediction-dhksswussxtwsnucdfkce3.streamlit.app">Open the live demo →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Background</h2>
+      <p class="lede">
+        <strong>USCIS — Operations Research Analyst (GS-14)</strong>, 2022–present.
+        Lead revenue and cost forecasting across 30+ revenue-generating forms
+        supporting analysis of more than $7B annually, using Python, SQL, Databricks,
+        and PySpark. Built and maintain the forecasting models, scenario analyses, and
+        automated reporting pipelines behind executive decision support.
+      </p>
+      <p class="lede">
+        <strong>U.S. Air Force, Tinker AFB — B-52 maintenance analytics</strong>,
+        2011–2014 and 2020–2022. Designed a Functional Check Flight defect-tracking
+        program covering 700+ events, identifying recurring failure patterns across
+        10+ parts and cutting post-dock flow days by roughly 10%. Quantified the
+        labor-capacity impact of proposed policy changes, flagging 35,000 production
+        hours at risk.
+      </p>
+      <p class="lede">
+        <strong>Education.</strong> MS in Data Science, Eastern University (2026),
+        4.0 GPA. BBA in Supply Chain Management, University of Oklahoma.
+        Lean Six Sigma Green Belt.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>What I'm looking for</h2>
+      <p class="lede">
+        Senior data science, operations research, or analytics engineering roles —
+        <strong>remote-first</strong>, working on forecasting, simulation, or
+        predictive maintenance problems at meaningful scale. I'm most useful where
+        there's real operational data, a decision that depends on it, and room to
+        own the pipeline from raw ingestion through to the model leadership trusts.
+      </p>
+      <p class="lede">
+        I'm a U.S. citizen with a Tier 5 (Top Secret/SCI-equivalent) background
+        investigation favorably adjudicated in 2025. I do not hold a current active
+        clearance — no need-to-know basis at present — and am eligible for
+        sponsorship or reinstatement. Previously served on-site in a cleared
+        Department of the Air Force depot environment.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Alexander Hewitt · Edmond, Oklahoma ·
+    <a href="mailto:AlexanderRhewitt@gmail.com">AlexanderRhewitt@gmail.com</a> ·
+    <a href="tel:+19189060674">918-906-0674</a>
+  </div>
+</footer>
+
+</body>
+</html>

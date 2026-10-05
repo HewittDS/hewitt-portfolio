@@ -1,284 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alexander Hewitt — Data Scientist &amp; Operations Research Analyst</title>
-<meta name="description" content="Data scientist and operations research analyst. $7B+ federal revenue forecasting in Databricks, B-52 predictive-maintenance analytics, and two production web applications shipped end to end.">
-<meta property="og:title" content="Alexander Hewitt — Data Scientist &amp; Operations Research Analyst">
-<meta property="og:description" content="Federal forecasting at $7B+ scale, aircraft sustainment analytics, and two live production applications.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://ahewitt.dev/">
-<link rel="canonical" href="https://ahewitt.dev/">
-<style>
-  :root{
-    --bg:#0b0d10; --panel:#12151a; --line:#22272f;
-    --fg:#e8eaed; --muted:#9aa3af; --accent:#5ea9ff; --accent-2:#7ee0a8;
-    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0;background:var(--bg);color:var(--fg);
-    font-family:var(--sans);line-height:1.6;font-size:16px;
-  }
-  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-
-  /* ---------- header ---------- */
-  header{padding:56px 0 34px;border-bottom:1px solid var(--line)}
-  h1{font-size:1.95rem;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em}
-  .role{color:var(--muted);font-size:1.05rem;margin:0 0 20px}
-  .role strong{color:var(--fg);font-weight:600}
-  .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
-  .links a{
-    border:1px solid var(--line);background:var(--panel);
-    padding:7px 13px;border-radius:7px;font-size:.9rem;color:var(--fg);
-  }
-  .links a:hover{border-color:var(--accent);text-decoration:none}
-
-  /* ---------- sections ---------- */
-  section{padding:38px 0;border-bottom:1px solid var(--line)}
-  h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.13em;
-     color:var(--muted);font-weight:600;margin:0 0 20px}
-  .lede{font-size:1.02rem;margin:0}
-  .lede + .lede{margin-top:14px}
-
-  /* ---------- metric strip ---------- */
-  .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
-  .metric{background:var(--panel);border:1px solid var(--line);
-          border-radius:9px;padding:15px 16px}
-  .metric .n{font-size:1.32rem;font-weight:650;letter-spacing:-.02em;display:block}
-  .metric .l{color:var(--muted);font-size:.79rem;line-height:1.4;display:block;margin-top:3px}
-
-  /* ---------- project cards ---------- */
-  .card{background:var(--panel);border:1px solid var(--line);
-        border-radius:11px;padding:22px;margin-bottom:16px}
-  .card:last-child{margin-bottom:0}
-  .card h3{margin:0 0 4px;font-size:1.13rem;letter-spacing:-.01em}
-  .card .kind{color:var(--accent-2);font-size:.76rem;text-transform:uppercase;
-              letter-spacing:.1em;font-weight:600}
-  .card p{margin:12px 0 0;color:#cfd4da;font-size:.95rem}
-  .stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
-  .stack span{font-family:var(--mono);font-size:.73rem;color:var(--muted);
-              border:1px solid var(--line);border-radius:5px;padding:3px 7px}
-  .card .go{display:inline-block;margin-top:15px;font-size:.9rem;font-weight:600}
-
-  /* ---------- honesty note ---------- */
-  .note{border-left:2px solid var(--accent);background:#101a26;
-        padding:14px 17px;border-radius:0 7px 7px 0;margin-top:16px;
-        font-size:.92rem;color:#c6cdd6}
-  .note strong{color:var(--fg)}
-
-  /* ---------- footer ---------- */
-  footer{padding:32px 0 54px;color:var(--muted);font-size:.88rem}
-  footer a{color:var(--fg)}
-
-  @media (max-width:640px){
-    header{padding:40px 0 28px}
-    h1{font-size:1.6rem}
-    .metrics{grid-template-columns:1fr}
-    section{padding:30px 0}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Hewitt — A career in data &amp; decisions</title>
+  <meta name="description" content="Explore Alexander Hewitt's career in operations research, aircraft maintenance analytics, federal forecasting, and data science. See the models and products behind the work.">
+  <meta property="og:title" content="Alexander Hewitt — A career in data &amp; decisions">
+  <meta property="og:description" content="From the flight line to the forecast. An interactive history of operations research, data science, and products built to support better decisions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ahewitt.dev/">
+  <meta property="og:image" content="https://ahewitt.dev/assets/operational-world.png">
+  <link rel="canonical" href="https://ahewitt.dev/">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="timeline.js" defer></script>
 </head>
 <body>
-
-<header>
-  <div class="wrap">
-    <h1>Alexander Hewitt</h1>
-    <p class="role">
-      Data scientist &amp; operations research analyst —
-      <strong>federal forecasting, predictive maintenance, and ML delivery</strong>.
-      Remote-first, based in Edmond, Oklahoma.
-    </p>
-    <nav class="links">
-      <a href="resume.pdf">Résumé (PDF)</a>
-      <a href="https://github.com/HewittDS">GitHub</a>
-      <a href="https://www.linkedin.com/in/alexander-h-887785263/">LinkedIn</a>
-      <a href="mailto:AlexanderRhewitt@gmail.com">Email</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <section>
-    <div class="wrap">
-      <h2>What I do</h2>
-      <p class="lede">
-        I build forecasting, simulation, and predictive models on large operational
-        datasets — and I ship the pipelines and dashboards that put them in front of
-        the people making decisions. Most of my work has been in environments where
-        the data is messy, the stakes are real, and the model has to be explainable
-        to a non-technical audience.
-      </p>
-      <p class="lede">
-        Ten-plus years across federal service (GS-14 Operations Research Analyst at
-        USCIS), Air Force depot maintenance analytics at Tinker AFB, banking, and
-        derivatives trading. MS in Data Science, 4.0 GPA. Lean Six Sigma Green Belt.
-      </p>
-
-      <div class="metrics">
-        <div class="metric">
-          <span class="n">$7B+</span>
-          <span class="l">Annual revenue and cost forecasting modeled</span>
-        </div>
-        <div class="metric">
-          <span class="n">24 days</span>
-          <span class="l">Recurring reporting work automated per year</span>
-        </div>
-        <div class="metric">
-          <span class="n">5.85M</span>
-          <span class="l">Flight records in my capstone ML pipeline</span>
-        </div>
-      </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="identity" href="#top" aria-label="Alexander Hewitt, home"><img src="assets/mark.svg" alt="" width="34" height="34"><span>Alexander Hewitt</span></a>
+      <nav aria-label="Main navigation"><a href="#history">History</a><a href="#work">Selected work</a><a href="#about">About</a><a class="resume-link" href="resume.pdf">Résumé <span aria-hidden="true">↗</span></a></nav>
     </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <h2>Selected work</h2>
-
-      <div class="card">
-        <span class="kind">Live product</span>
-        <h3>Zollera — contractor quote analysis platform</h3>
-        <p>
-          A production web application that ingests contractor quotes as PDFs, photos,
-          or scans and extracts them into structured, comparable line items, so a
-          homeowner can see where a quote sits in the market. I designed and built it
-          end to end: 83 API routes and 61 pages on Next.js 15 with TypeScript and
-          PostgreSQL, including authentication, role-based admin tooling, rate
-          limiting, and audit logging.
-        </p>
-        <p>
-          The extraction core is a tiered, multi-provider LLM pipeline with automatic
-          failover — Gemini for native PDF handling, then vision models — running
-          under one shared time budget so a slow tier can't starve the fallback.
-          Around it sits PII detection and redaction before any model call, price
-          outlier and fraud-signal checks, duplicate-document detection, unit and
-          financial normalization, and an admin QC workflow for bulk uploads.
-        </p>
-        <div class="stack">
-          <span>Next.js 15</span><span>TypeScript</span><span>PostgreSQL</span>
-          <span>Prisma</span><span>NextAuth</span><span>Gemini</span>
-          <span>DeepInfra</span><span>Vercel</span>
-        </div>
-        <a class="go" href="https://zollera.com">Visit zollera.com →</a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="role">Data scientist &amp; operations research analyst</p>
+        <h1 id="hero-heading">From the flight line to the forecast.</h1>
+        <p class="hero-lede">I turn operational data into models people can use. My path runs through aircraft maintenance, financial decisions, federal forecasting, and products I built from scratch.</p>
+        <div class="hero-actions"><a class="button primary" id="begin-history" href="#history">Explore my history <span aria-hidden="true">↓</span></a><a class="text-link" href="mailto:AlexanderRhewitt@gmail.com">Let’s talk</a></div>
       </div>
+      <figure class="hero-world"><img src="assets/operational-world.webp" alt="A conceptual 3D model connects an aircraft, a forecast curve, and a software interface." width="1536" height="1024" fetchpriority="high"><figcaption>Operations. Models. Products.<span>Concept illustration</span></figcaption></figure>
+    </section>
+    <div class="current-strip wrap"><p><span class="status-dot" aria-hidden="true"></span>Now at <strong>USCIS</strong> <span>Operations Research Analyst, GS-14</span></p><p>Edmond, Oklahoma <span>Remote-first</span></p></div>
 
-      <div class="card">
-        <span class="kind">Live product</span>
-        <h3>HighThree — federal retirement analytics</h3>
-        <p>
-          A retirement analytics suite for federal employees under FERS: 43 reference
-          pages and 59 locality-pay pages. The core model projects salary and service
-          year by year, then discounts the resulting annuity stream to present value.
-          Companion tools cover break-even age, claiming timing, survivor and COLA
-          effects, TSP drawdown, and side-by-side scenario comparison.
-        </p>
-        <p>
-          Deliberately built with vanilla HTML, CSS, and JavaScript — no framework, no
-          build step, no server. Every calculation runs in the browser, so a user's
-          salary and service history never leave their device. Hardened with a strict
-          Content-Security Policy and built for search discovery with programmatic
-          locality-pay pages and generated social cards.
-        </p>
-        <div class="stack">
-          <span>JavaScript</span><span>HTML/CSS</span><span>Financial modeling</span>
-          <span>Present-value discounting</span><span>SEO</span><span>CSP</span>
-          <span>Vercel</span>
+    <section class="history-section section-space" id="history" aria-labelledby="history-heading">
+      <div class="wrap">
+        <div class="section-intro"><div><p class="section-kicker">2011 to today</p><h2 id="history-heading">Different systems.<br>The same curiosity.</h2></div><p>Choose a chapter to see the problem, the method, and the result. The setting changes. The question stays: how can this work better?</p></div>
+        <div class="timeline-tabs" role="tablist" aria-label="Career chapters">
+          <button id="tab-2011" role="tab" aria-controls="chapter-2011" aria-selected="false" data-chapter="0"><span class="year">2011</span><span>Foundations</span></button>
+          <button id="tab-2014" role="tab" aria-controls="chapter-2014" aria-selected="false" data-chapter="1"><span class="year">2014</span><span>Real estate</span></button>
+          <button id="tab-2017" role="tab" aria-controls="chapter-2017" aria-selected="false" data-chapter="2"><span class="year">2017</span><span>Markets</span></button>
+          <button id="tab-2020-bank" role="tab" aria-controls="chapter-2020-bank" aria-selected="false" data-chapter="3"><span class="year">2020</span><span>Banking</span></button>
+          <button id="tab-2020-aircraft" role="tab" aria-controls="chapter-2020-aircraft" aria-selected="false" data-chapter="4"><span class="year">2020</span><span>Aircraft</span></button>
+          <button id="tab-2021" role="tab" aria-controls="chapter-2021" aria-selected="false" data-chapter="5"><span class="year">2021</span><span>Leadership</span></button>
+          <button id="tab-2022" role="tab" aria-controls="chapter-2022" aria-selected="true" data-chapter="6"><span class="year">2022</span><span>Forecasting</span></button>
+          <button id="tab-2026" role="tab" aria-controls="chapter-2026" aria-selected="false" data-chapter="7"><span class="year">2026</span><span>Data science</span></button>
         </div>
-        <a class="go" href="https://highthree.org">Visit highthree.org →</a>
-      </div>
-
-      <div class="card">
-        <span class="kind">Capstone — MS Data Science</span>
-        <h3>Flight departure delay prediction</h3>
-        <p>
-          An end-to-end regression pipeline over 5,854,077 U.S. domestic flights from
-          2024, joined to historical weather observations at the top 100 airports.
-          Six models evaluated — linear, regularized, random forest, XGBoost, and
-          LightGBM — with LightGBM deployed. 71 pre-departure features spanning
-          schedule, route history, and weather. Deployed as an interactive Streamlit
-          app with per-prediction feature attribution.
-        </p>
-        <p>
-          <strong>Reported honestly:</strong> test MAE 21.7 min, median absolute error
-          12.6 min, R² 0.077. An earlier iteration scored much higher only because it
-          leaked post-departure fields such as <code>carrier_delay</code> — values
-          recorded after a flight is already late. I found the leakage, removed it,
-          and re-evaluated on pre-departure signals only. Predicting delays before
-          departure is genuinely hard; the median error is the figure I'd stand
-          behind, and the notebook documenting the leak is in the repo history.
-        </p>
-        <div class="stack">
-          <span>Python</span><span>LightGBM</span><span>XGBoost</span>
-          <span>scikit-learn</span><span>pandas</span><span>Streamlit</span>
-          <span>Plotly</span>
+        <div class="chapter-toolbar"><p id="chapter-position" aria-live="polite">Chapter 7 of 8</p><div><button id="full-history" class="quiet-button" aria-expanded="false">View full history</button><button id="previous-chapter" class="round-button" aria-label="Previous chapter">←</button><button id="next-chapter" class="round-button" aria-label="Next chapter">→</button></div></div>
+        <div class="chapters">
+          <article class="chapter" id="chapter-2011" role="tabpanel" aria-labelledby="tab-2011" tabindex="0" data-visual="parts">
+            <div class="chapter-copy"><p class="chapter-dates">July 2011 – January 2014</p><h3>Start where the work happens.</h3><p class="organization">U.S. Air Force, Tinker AFB</p><p class="job-title">Data Analyst / Maintenance Scheduler, GS-11</p><p>I built performance reports and improved the data behind maintenance scheduling. The first lesson: useful analysis starts with reliable operational records.</p><div class="chapter-result"><strong>3,000+</strong><span>part numbers in a new labeling system</span></div><p class="supporting-fact">Supported 10+ process improvements across maintenance operations.</p><ul class="tools"><li>Operational reporting</li><li>Process improvement</li><li>Labor-hour analysis</li></ul></div>
+            <div class="model-panel" data-inspector="parts"><div class="model-heading"><span>Making the system visible</span><span class="model-type">Technical illustration</span></div><div class="model-canvas"></div><div class="inspect-controls" aria-label="Explore maintenance scheduling"><button class="is-active" data-layer="0" aria-pressed="true">Records</button><button data-layer="1" aria-pressed="false">Method</button><button data-layer="2" aria-pressed="false">Decision</button></div><p class="model-explanation" aria-live="polite">A consistent part label connects the physical item to its operational record.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2014" role="tabpanel" aria-labelledby="tab-2014" tabindex="0" data-visual="property">
+            <div class="chapter-copy"><p class="chapter-dates">January 2014 – April 2017</p><h3>Put a number on the trade-off.</h3><p class="organization">Self-employed, Tulsa</p><p class="job-title">Real Estate Investor / Analyst</p><p>I evaluated acquisition, renovation, and resale decisions. Cost-benefit analysis became a practical tool for choosing properties, contractors, and project scope.</p><div class="chapter-result"><strong>50+</strong><span>properties evaluated</span></div><p class="supporting-fact">Managed 15+ projects and reduced contractor costs by 20% through vendor selection and planning.</p><ul class="tools"><li>Cost-benefit analysis</li><li>Vendor comparison</li><li>Project planning</li></ul></div>
+            <div class="model-panel" data-inspector="property"><div class="model-heading"><span>Underneath the purchase price</span><span class="model-type">Technical illustration</span></div><div class="model-canvas"></div><div class="inspect-controls" aria-label="Explore property analysis"><button class="is-active" data-layer="0" aria-pressed="true">Inputs</button><button data-layer="1" aria-pressed="false">Trade-offs</button><button data-layer="2" aria-pressed="false">Decision</button></div><p class="model-explanation" aria-live="polite">Acquisition cost, renovation scope, and resale assumptions define the decision.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2017" role="tabpanel" aria-labelledby="tab-2017" tabindex="0" data-visual="markets">
+            <div class="chapter-copy"><p class="chapter-dates">April 2017 – March 2020</p><h3>Think in probabilities.</h3><p class="organization">HFLLC, Tulsa</p><p class="job-title">Day Trader / Portfolio Analyst</p><p>I analyzed derivatives activity and built rule-based, time-series decision models. The work required explicit assumptions, disciplined risk analysis, and decisions under uncertainty.</p><div class="chapter-result"><strong>$15M+</strong><span>derivatives activity in a calendar year</span></div><p class="supporting-fact">A foundation in probabilistic reasoning that later carried into forecasting and scenario analysis.</p><ul class="tools"><li>Time-series analysis</li><li>Risk analysis</li><li>Decision rules</li></ul></div>
+            <div class="model-panel" data-inspector="markets"><div class="model-heading"><span>One decision, many outcomes</span><span class="model-type">Illustrative distribution</span></div><div class="model-canvas"></div><div class="inspect-controls" aria-label="Explore probabilistic reasoning"><button class="is-active" data-layer="0" aria-pressed="true">Signals</button><button data-layer="1" aria-pressed="false">Uncertainty</button><button data-layer="2" aria-pressed="false">Decision</button></div><p class="model-explanation" aria-live="polite">Time-series signals inform a decision. They do not guarantee an outcome.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2020-bank" role="tabpanel" aria-labelledby="tab-2020-bank" tabindex="0" data-visual="bank">
+            <div class="chapter-copy"><p class="chapter-dates">March 2020 – August 2020</p><h3>Make the numbers reconcile.</h3><p class="organization">Bank of Oklahoma, Tulsa</p><p class="job-title">Security Services Operations Specialist I</p><p>I processed transactions and reconciled client funds. Accuracy, controls, and traceable reporting mattered at every handoff.</p><div class="chapter-result"><strong>$30M+</strong><span>daily client funds processed and reconciled</span></div><p class="supporting-fact">Supported audit, compliance, and operations through reports and issue resolution.</p><ul class="tools"><li>Reconciliation</li><li>Data controls</li><li>Issue resolution</li></ul></div>
+            <div class="model-panel" data-inspector="bank"><div class="model-heading"><span>A traceable path through the data</span><span class="model-type">Process model</span></div><div class="model-canvas"></div><div class="inspect-controls" aria-label="Explore transaction reconciliation"><button class="is-active" data-layer="0" aria-pressed="true">Transactions</button><button data-layer="1" aria-pressed="false">Controls</button><button data-layer="2" aria-pressed="false">Reconciliation</button></div><p class="model-explanation" aria-live="polite">Transaction records enter a controlled process for accurate reconciliation.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2020-aircraft" role="tabpanel" aria-labelledby="tab-2020-aircraft" tabindex="0" data-visual="aircraft">
+            <div class="chapter-copy"><p class="chapter-dates">August 2020 – August 2021</p><h3>Find the constraint in the flow.</h3><p class="organization">U.S. Air Force, Tinker AFB</p><p class="job-title">B-52 Aircraft Maintenance Data Analyst, GS-11</p><p>I returned to aircraft sustainment with a broader analytical toolkit. I examined maintenance flow, workforce performance, and the causes behind production bottlenecks.</p><div class="chapter-result"><strong>B-52</strong><span>maintenance operations and production analysis</span></div><p class="supporting-fact">Analyzed avionics, sheet metal, and electrics. Improved recurring reports with Excel macros.</p><ul class="tools"><li>Root cause analysis</li><li>Excel / VBA</li><li>Production metrics</li></ul></div>
+            <div class="model-panel" data-inspector="aircraft"><div class="model-heading"><span>A system of connected work</span><span class="model-type">Aircraft schematic</span></div><div class="model-canvas"></div><div class="inspect-controls" aria-label="Explore aircraft maintenance analysis"><button class="is-active" data-layer="0" aria-pressed="true">Operations</button><button data-layer="1" aria-pressed="false">Constraints</button><button data-layer="2" aria-pressed="false">Reporting</button></div><p class="model-explanation" aria-live="polite">Maintenance records connect shop activity, workforce capacity, and production flow.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2021" role="tabpanel" aria-labelledby="tab-2021" tabindex="0" data-visual="leadership">
+            <div class="chapter-copy"><p class="chapter-dates">August 2021 – August 2022</p><h3>Turn recurring defects into a signal.</h3><p class="organization">U.S. Air Force, 565th AMXS</p><p class="job-title">B-52 Aircraft Lead Data / Management Analyst, GS-12</p><p>I designed a Functional Check Flight defect-tracking program. Connecting events across parts exposed recurring patterns and supported changes to maintenance flow.</p><div class="chapter-result"><strong>700+</strong><span>Functional Check Flight events tracked</span></div><p class="supporting-fact">Identified recurring patterns in 10+ parts. Reduced post-dock flow by 5+ days, approximately 10%.</p><p class="supporting-fact">Also identified 35,000 production hours at risk from proposed policy changes.</p><ul class="tools"><li>Reliability signals</li><li>Capacity analysis</li><li>Leadership briefings</li></ul></div>
+            <div class="model-panel" data-inspector="leadership"><div class="model-heading"><span>From events to a reliability signal</span><span class="model-type">Process model</span></div><div class="model-canvas"></div><div class="inspect-controls" aria-label="Explore defect tracking"><button class="is-active" data-layer="0" aria-pressed="true">Events</button><button data-layer="1" aria-pressed="false">Patterns</button><button data-layer="2" aria-pressed="false">Action</button></div><p class="model-explanation" aria-live="polite">The tracking program connected 700+ check-flight events to recurring part failures.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2022" role="tabpanel" aria-labelledby="tab-2022" tabindex="0" data-visual="forecast">
+            <div class="chapter-copy"><p class="chapter-dates">August 2022 – present <span class="current-label">Current role</span></p><h3>Forecast at federal scale.</h3><p class="organization">U.S. Citizenship and Immigration Services</p><p class="job-title">Operations Research Analyst, GS-14</p><p>I lead revenue and cost forecasting across 30+ revenue-generating forms. I build the data pipelines, scenario models, and reports behind executive decisions.</p><div class="chapter-result"><strong>$7B+</strong><span>annual revenue and cost forecasting supported</span></div><p class="supporting-fact">Automated recurring reporting, saving approximately 24 workdays per year.</p><ul class="tools"><li>Python</li><li>SQL</li><li>Databricks / PySpark</li><li>SAS / Tableau</li></ul></div>
+            <div class="model-panel" data-inspector="forecast"><div class="model-heading"><span>Explore a forecast</span><span class="model-type">Illustrative model</span></div><div class="model-canvas"></div><div class="forecast-control"><label for="scenario-shift">Change the scenario <output id="scenario-label" for="scenario-shift">Baseline</output></label><input type="range" id="scenario-shift" min="-20" max="20" value="0" step="1" aria-describedby="forecast-note"></div><p class="model-explanation" id="forecast-note">Move the slider to change an illustrative growth assumption. The curves show a scenario and uncertainty, not USCIS data.</p></div>
+          </article>
+          <article class="chapter" id="chapter-2026" role="tabpanel" aria-labelledby="tab-2026" tabindex="0" data-visual="science">
+            <div class="chapter-copy"><p class="chapter-dates">March 2026 <span class="current-label">Education</span></p><h3>Test the model. Question the score.</h3><p class="organization">Eastern University</p><p class="job-title">MS in Data Science, 4.0 GPA</p><p>My capstone joined 2024 flight records with historical weather and compared six regression models. I removed post-departure leakage and evaluated pre-departure signals only.</p><div class="chapter-result"><strong>5.85M</strong><span>flight records in the capstone pipeline</span></div><p class="supporting-fact">LightGBM test MAE: 21.7 minutes. Median absolute error: 12.6 minutes. R²: 0.077.</p><ul class="tools"><li>Python</li><li>LightGBM / XGBoost</li><li>scikit-learn</li><li>Streamlit</li></ul></div>
+            <div class="model-panel benchmark-panel"><div class="model-heading"><span>Compare the test results</span><span class="model-type">Recorded evaluation</span></div><div class="benchmark-controls" role="group" aria-label="Evaluation metric"><button data-metric="MAE" class="is-active" aria-pressed="true">Mean absolute error</button><button data-metric="RMSE" aria-pressed="false">Root mean squared error</button></div><div id="model-benchmark" class="benchmark-chart"></div><p class="benchmark-axis">Minutes of error · lower is better · bars start at zero</p><p class="model-explanation">These are the corrected test results. Modest predictive performance is part of the result, not a number to hide.</p></div>
+          </article>
         </div>
-        <a class="go" href="https://dtsc691flightprediction-dhksswussxtwsnucdfkce3.streamlit.app">Open the live demo →</a>
+        <noscript><p class="no-js-note">JavaScript is off. All career chapters appear below in chronological order.</p></noscript>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="wrap">
-      <h2>Background</h2>
-      <p class="lede">
-        <strong>USCIS — Operations Research Analyst (GS-14)</strong>, 2022–present.
-        Lead revenue and cost forecasting across 30+ revenue-generating forms
-        supporting analysis of more than $7B annually, using Python, SQL, Databricks,
-        and PySpark. Built and maintain the forecasting models, scenario analyses, and
-        automated reporting pipelines behind executive decision support.
-      </p>
-      <p class="lede">
-        <strong>U.S. Air Force, Tinker AFB — B-52 maintenance analytics</strong>,
-        2011–2014 and 2020–2022. Designed a Functional Check Flight defect-tracking
-        program covering 700+ events, identifying recurring failure patterns across
-        10+ parts and cutting post-dock flow days by roughly 10%. Quantified the
-        labor-capacity impact of proposed policy changes, flagging 35,000 production
-        hours at risk.
-      </p>
-      <p class="lede">
-        <strong>Education.</strong> MS in Data Science, Eastern University (2026),
-        4.0 GPA. BBA in Supply Chain Management, University of Oklahoma.
-        Lean Six Sigma Green Belt.
-      </p>
-    </div>
-  </section>
+    <section class="work-section section-space wrap" id="work" aria-labelledby="work-heading">
+      <div class="section-intro"><div><p class="section-kicker">Independent products</p><h2 id="work-heading">Models that became tools.</h2></div><p>I also build products from the first data question to the interface people use. These are two examples you can explore today.</p></div>
+      <article class="project project-zollera">
+        <div class="project-visual"><a href="https://zollera.com" aria-label="Visit Zollera"><img src="assets/zollera-preview.png" alt="Zollera's live homepage compares a contractor quote with a local price range." loading="lazy" width="1200" height="575"></a><span class="preview-label">Live product preview</span></div>
+        <div class="project-copy"><p class="project-category">Document intelligence</p><h3>Zollera</h3><p class="project-lede">A contractor quote, made easier to question.</p><p>I built a platform that turns PDFs, photos, and scans into comparable line items. A tiered LLM pipeline handles extraction and provider failover.</p><p>PII detection, redaction, normalization, and review controls surround the model so the output can support a useful decision.</p><ul class="tools"><li>Next.js / TypeScript</li><li>PostgreSQL</li><li>Multi-provider LLMs</li></ul><a class="project-link" href="https://zollera.com">Explore Zollera <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="project project-highthree">
+        <div class="project-visual"><a href="https://highthree.org" aria-label="Visit HighThree"><img src="assets/highthree-preview.png" alt="HighThree's live homepage presents an illustrative retirement income breakdown." loading="lazy" width="1200" height="565"></a><span class="preview-label">Live product preview · example scenario</span></div>
+        <div class="project-copy"><p class="project-category">Financial modeling</p><h3>HighThree</h3><p class="project-lede">Make the long-term trade-off visible.</p><p>I built federal retirement tools that project salary, service, and pension income. Present-value models and scenario comparisons help users examine career decisions.</p><p>All calculations run in the browser. Salary and service inputs stay on the user’s device.</p><ul class="tools"><li>JavaScript</li><li>Scenario analysis</li><li>Present-value models</li></ul><a class="project-link" href="https://highthree.org">Explore HighThree <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <div class="capstone-note"><div><h3>Flight delay prediction</h3><p>71 pre-departure features. Six evaluated models. A Streamlit interface with per-prediction feature attribution.</p></div><a class="text-link" href="#chapter-2026" data-show-science>Explore the evaluation <span aria-hidden="true">↗</span></a></div>
+    </section>
 
-  <section>
-    <div class="wrap">
-      <h2>What I'm looking for</h2>
-      <p class="lede">
-        Senior data science, operations research, or analytics engineering roles —
-        <strong>remote-first</strong>, working on forecasting, simulation, or
-        predictive maintenance problems at meaningful scale. I'm most useful where
-        there's real operational data, a decision that depends on it, and room to
-        own the pipeline from raw ingestion through to the model leadership trusts.
-      </p>
-      <p class="lede">
-        I'm a U.S. citizen with a Tier 5 (Top Secret/SCI-equivalent) background
-        investigation favorably adjudicated in 2025. I do not hold a current active
-        clearance — no need-to-know basis at present — and am eligible for
-        sponsorship or reinstatement. Previously served on-site in a cleared
-        Department of the Air Force depot environment.
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    Alexander Hewitt · Edmond, Oklahoma ·
-    <a href="mailto:AlexanderRhewitt@gmail.com">AlexanderRhewitt@gmail.com</a> ·
-    <a href="tel:+19189060674">918-906-0674</a>
-  </div>
-</footer>
-
+    <section class="about-section section-space" id="about" aria-labelledby="about-heading"><div class="wrap about-grid"><div><p class="section-kicker">The thread through the work</p><h2 id="about-heading">Understand the operation.<br>Then build the model.</h2><p>I’m most useful where the data is messy, the decision matters, and someone needs to own the path from raw records to a usable result.</p><p>I’m interested in senior data science, operations research, and analytics engineering roles focused on forecasting, simulation, or predictive maintenance.</p><a class="button primary" href="mailto:AlexanderRhewitt@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></div><div class="about-details"><div><h3>Education</h3><p>MS, Data Science<br><span>Eastern University, 2026 · GPA 4.0</span></p><p>BBA, Supply Chain Management<br><span>University of Oklahoma, 2011</span></p></div><div><h3>Methods &amp; tools</h3><p>Forecasting, Monte Carlo simulation, applied statistics, feature engineering, and scenario analysis.</p><p>Python, SQL, R, SAS, Databricks, PySpark, Tableau, Power BI, and Excel / VBA.</p></div><div><h3>Professional context</h3><p>Lean Six Sigma Green Belt. U.S. citizen. Tier 5 background investigation favorably adjudicated in 2025. No active security clearance.</p></div></div></div></section>
+  </main>
+  <footer class="wrap"><div><a class="identity" href="#top"><img src="assets/mark.svg" alt="" width="30" height="30"><span>Alexander Hewitt</span></a><p>Edmond, Oklahoma. Open to remote work.</p></div><div class="footer-links"><a href="mailto:AlexanderRhewitt@gmail.com">Email</a><a href="https://www.linkedin.com/in/alexander-h-887785263/">LinkedIn</a><a href="https://github.com/HewittDS">GitHub</a><a href="resume.pdf">Résumé PDF</a><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
